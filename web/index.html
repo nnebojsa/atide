@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atide - Alles in der Ehe teilen</title>
+
+<link rel="stylesheet"
+	href="http://localhost/atide/web/mobile/jquery.mobile-1.4.5.min.css" />
+
+<script src="http://localhost/atide/web/mobile/jquery-1.11.3.min.js"></script>
+<script
+	src="http://localhost/atide/web/mobile/jquery.mobile-1.4.5.min.js"></script>
+<script src="http://localhost/atide/web/js/bl.js"></script>
+
+
+</head>
+
+<body>
+
+	<div id="welcome" data-role="page">
+		<div data-role="header" data-position="fixed">
+			<h1>Atide</h1>
+		</div>
+		<div data-role="content">
+
+			<form id="calc-atide" class="ui-body ui-body-a ui-corner-all"
+				data-ajax="false" method="post">
+
+				<fieldset>
+					<div data-role="fieldcontain">
+						<!--   <label for="einkommen-1">Einkommen 1:</label> -->
+						<input name="inc1" id="inc1" value="" type="text"
+							data-clear-btn="true" placeholder="Einkommen 1">
+					</div>
+
+					<div data-role="fieldcontain">
+						<!--   <label for="einkommen-2">Einkommen 2:</label> -->
+						<input name="inc2" id="inc2" value="" type="text"
+							data-clear-btn="true" placeholder="Einkommen 2">
+					</div>
+
+					<div data-role="fieldcontain">
+						<!--   <label for="gesammteinkommen">Gesammteinkommen:</label> -->
+						<input name="expenses" id="expenses" value="" type="text"
+							data-clear-btn="true" placeholder="Gesammteinkommen">
+					</div>
+
+					<div data-role=navbar>
+						<input name="submit" id="submit" value="Berechne..." type="button"
+							onClick="javascript:ca(inc1.value, inc2.value, expenses.value)" />
+					</div>
+				</fieldset>
+
+			</form>
+		</div>
+		<div data-role="footer">
+			<div data-role="navbar">
+				<ul>
+					<li><a data-icon="info" href="about.html">About</a></li>
+					<li><a data-icon="star" href="#resultDiv">Result</a></li>
+					<li><a data-icon="star" href="#atide">Atide</a>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div id=resultDiv data-role=page>
+		<div data-role=content>
+			<fieldset>
+				<div data-role="fieldcontain">
+					<label for="rev_1">Einkommen 1:</label>
+					<input name="rev_1" id="rev_1" value="" type="text">
+					<label for="rev_2">Einkommen 2:</label>
+					<input name="rev_2" id="rev_2" value="" type="text">
+					<label for="total_rev">Gesamt Einkommen:</label>
+					<input name="total_rev" id="total_rev" value="" type="text">
+					<label for="expens">Gesamt Ausgabe:</label>
+					<input name="expens" id="expens" value="" type="text">
+					
+					<label for="diff_tr_ex">Differenz Einahme/Ausgabe:</label>
+					<input name="diff_tr_ex" id="diff_tr_ex" value="" type="text">
+					
+					<label for="prc_rev1">%-Ant. Eink.1 an Ges.eink.:</label>
+					<input name="prc_rev1" id="prc_rev1" value="" type="text">
+					
+					<label for="prc_rev1">%-Ant. Eink.2 an Ges.eink.:</label>
+					<input name="prc_rev2" id="prc_rev2" value="" type="text">
+					
+					<label for="prc_val_rev1">Anteil Eink.1 an Ges.ausgabe:</label>
+					<input name="prc_val_rev1" id="prc_val_rev1" value="" type="text">
+					
+					<label for="prc_val_rev2">Anteil Eink.2 an Ges.ausgabe:</label>
+					<input name="prc_val_rev2" id="prc_val_rev2" value="" type="text">
+					
+					<label for="prc_val_diff1">Restwert Eink.1 :</label>
+					<input name="prc_val_diff1" id="prc_val_diff1" value="" type="text">
+					<label for="prc_val_diff2">Restwert Eink.2 :</label>
+					<input name="prc_val_diff2" id="prc_val_diff2" value="" type="text">
+					
+				</div>
+			</fieldset>
+		</div>
+	</div>
+</body>
+</html>

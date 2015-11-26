@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset=utf-8>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Atide - Alles in der Ehe teilen</title>
+      <link rel="stylesheet" href="http://localhost/atide/web/mobile/jquery.mobile-1.4.5.min.css" />
+      
+      <script src="http://localhost/atide/web/mobile/jquery-1.11.3.min.js"></script>
+      <script src="http://localhost/atide/web/mobile/jquery.mobile-1.4.5.min.js"></script>
+   </head>
+   
+<body>
+    <div data-role="page" id="first" data-theme="b">
+        <div data-role="header" data-theme="a">
+            <h3>Login Page</h3>
+        </div>
+ 
+        <div data-role="content">
+            <form id="check-user" class="ui-body ui-body-a ui-corner-all" data-ajax="false" method="post" action="">
+                <fieldset>
+                    <div data-role="fieldcontain">
+                        <label for="username">Enter your username:</label>
+                        <input type="text" value="" name="username" id="username"/>
+                    </div>                                  
+                    <div data-role="fieldcontain">                                      
+                        <label for="password">Enter your password:</label>
+                        <input type="password" value="" name="password" id="password"/> 
+                    </div>
+                    <input type="submit" data-theme="b" name="submit" id="submit" value="Submit">
+                </fieldset>
+            </form>                              
+        </div>
+    </div>
+</body>
+</html>
