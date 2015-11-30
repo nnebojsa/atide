@@ -3,7 +3,7 @@
 <head>
 <meta charset=utf-8>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Atide - Alles in der Ehe teilen</title>
+<title>Atide - Alles teilen in der Ehe</title>
 
 <link rel="stylesheet"
 	href="http://localhost/atide/web/mobile/jquery.mobile-1.4.5.min.css" />
@@ -22,33 +22,32 @@
 		<div data-role="header" data-position="fixed">
 			<h1>Atide</h1>
 		</div>
-		<div data-role="content">
+		<div data-role="content" data-theme="c">
 
 			<form id="calc-atide" class="ui-body ui-body-a ui-corner-all"
-				data-ajax="false" method="post">
+				data-ajax="false" method="post" >
 
 				<fieldset>
 					<div data-role="fieldcontain">
-						<!--   <label for="einkommen-1">Einkommen 1:</label> -->
+						<!--   <label for="einkommen-1">Einkommen 1 (was ich so verdiene und in die Beziehung einstecke ...):</label> -->
 						<input name="inc1" id="inc1" value="" type="text"
-							data-clear-btn="true" placeholder="Einkommen 1">
+							data-clear-btn="true" placeholder="Einkommen 1 (was ich so verdiene und in die Beziehung einstecke ...):">
 					</div>
 
 					<div data-role="fieldcontain">
-						<!--   <label for="einkommen-2">Einkommen 2:</label> -->
+						<!--   <label for="einkommen-2">Einkommen 2 (was ich so verdiene und in die Beziehung einstecke ...):</label> -->
 						<input name="inc2" id="inc2" value="" type="text"
-							data-clear-btn="true" placeholder="Einkommen 2">
+							data-clear-btn="true" placeholder="Einkommen 2 (was ich so verdiene und in die Beziehung einstecke ...):">
 					</div>
 
 					<div data-role="fieldcontain">
-						<!--   <label for="gesammteinkommen">Gesammteinkommen:</label> -->
+						<!--   <label for="gesammteinkommen">Gesammtausgabe (was wir so gemeinsam ausgeben/einvestieren etc...):</label> -->
 						<input name="expenses" id="expenses" value="" type="text"
-							data-clear-btn="true" placeholder="Gesammteinkommen">
+							data-clear-btn="true" placeholder="Gesammtausgabe (was wir so gemeinsam ausgeben/einvestieren etc...):">
 					</div>
-
 					<div data-role=navbar>
 						<input name="submit" id="submit" value="Berechne..." type="button"
-							onClick="javascript:ca(inc1.value, inc2.value, expenses.value)" />
+							onClick="javascript:ca(inc1.value, inc2.value, expenses.value)" >
 					</div>
 				</fieldset>
 
@@ -64,6 +63,8 @@
 			</div>
 		</div>
 	</div>
+
+<!-- ############################################ Result Site ############################################ -->
 
 	<div id=resultDiv data-role=page>
 		<div data-role=content>

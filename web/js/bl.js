@@ -2,8 +2,6 @@ function ca(f_inc1, f_inc2, f_expens) {
 	
 	$.getJSON('http://localhost:8080/svcAtide?inc1=' + f_inc1 + '&inc2=' + f_inc2 + '&expens=' + f_expens, function(data) {
 		
-		//document.getElementById("resultDiv").innerHTML = data.rev_1;
-		
 		document.getElementById("rev_1").value = data.rev_1;
 		document.getElementById("rev_2").value = data.rev_2;
 		document.getElementById("total_rev").value = data.total_rev;
@@ -17,4 +15,7 @@ function ca(f_inc1, f_inc2, f_expens) {
 		document.getElementById("prc_val_rev2").value = data.prc_val_rev2;
 
 	});
-}
+	
+	$.mobile.changePage( "#resultDiv");
+};
+

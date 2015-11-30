@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery Mobile Panel</title>
+<link rel="stylesheet"
+	href="http://localhost/atide/web/mobile/jquery.mobile-1.4.5.min.css" />
+
+<script src="http://localhost/atide/web/mobile/jquery-1.11.3.min.js"></script>
+<script
+	src="http://localhost/atide/web/mobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+	<div data-role="page">
+		<div data-role="header">
+			<h1>Panel Beispiel</h1>
+		</div>
+		<!-- /header -->
+
+		<div data-role="content">
+			<a href="#panel1" data-role="button" data-inline="true"
+				data-mini="true">Menü</a> <a href="#panel2" data-role="button"
+				data-inline="true" data-mini="true">Login</a>
+		</div>
+		<!-- /content -->
+
+		<div data-role="panel" data-position="left" data-display="reveal"
+			id="panel1" data-theme="b">
+			<h2>Menü</h2>
+			<ul data-role="listview" data-theme="b">
+				<li data-icon="search"><a href="../search.html">Suchen</a></li>
+				<li data-icon="star"><a href="#fav">Favorit</a></li>
+				<li data-icon="refresh"><a href="../sync.html">Sychronisieren</a>
+				</li>
+				<li data-icon="option"><a href="../optionen.html">Optionen</a>
+				</li>
+				<li data-icon="delete"><a href="#" data-rel="close">Schliessen</a>
+				</li>
+			</ul>
+		</div>
+		<!-- /panel -->
+
+		<div data-role="panel" data-position="right" data-display="overlay"
+			id="panel2" data-theme="a">
+
+			<form class="userform">
+				<h2>Login</h2>
+				<label for="email">Email</label> <input type="email" name="email"
+					id="status" value="" data-clear-btn="true" data-mini="true">
+
+				<label for="password">Passwort:</label> <input type="password"
+					name="password" id="password" value="" data-clear-btn="true"
+					autocomplete="off" data-mini="true">
+
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<a href="#" data-rel="close" data-role="button" data-theme="e"
+							data-mini="true">Abbrechen</a>
+					</div>
+					<div class="ui-block-b">
+						<a href="#" data-rel="close" data-role="button" data-theme="a"
+							data-mini="true">Login</a>
+					</div>
+				</div>
+			</form>
+
+			<!-- panel content goes here -->
+		</div>
+		<!-- /panel -->
+
+	</div>
+	<!-- /page -->
+</body>
+</html>
